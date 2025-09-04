@@ -41,3 +41,21 @@ After installation, ensure the script is enabled in Tampermonkey's **Installed U
 4. **Contextual Notes**: Explains the script's purpose and directs users to additional resources .
 
 This Markdown file can be rendered on GitHub or any platform supporting HTML-like buttons in Markdown. Users can click the button to initiate the installation process seamlessly.
+
+
+
+## Disclaimer
+
+Use this database responsibly and only for educational purposes. The creator disclaims any liability for actions and consequences resulting from the use of this data.
+
+## Contribution
+
+If you have suggestions or improvements, feel free to contribute. Follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## License
+
+This project is licensed under the License 2.0 apache github - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contact
+
+For questions or concerns, you can contact the project creator at Website www.alikparanyan.com or Email mail@alikparanyan.com or personal gmail alikparanyan@gmail.com.
