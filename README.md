@@ -1,61 +1,123 @@
-To help users easily install the JIRA autofill userscript via Tampermonkey, you can create a Markdown file with an installation button and clear instructions. Below is a template you can use:
+# Tanki Online Mods & Cheats Collection
 
----
+A collection of Tampermonkey scripts designed to enhance the Tanki Online gaming experience with various modifications, quality-of-life improvements, and gameplay enhancements.
 
-# JIRA Autofill Userscript Installation
+## Scripts Overview
 
-This guide will help you install the Tampermonkey userscript for auto-filling fields in JIRA.
+### 1. Player Health Highlighter
+**File:** `player-health-highlighter.js`  
+**Description:** Enhances player visibility and provides crucial combat information at a glance:
+- Identifies player elements in the DOM
+- Applies visual highlighting with bright red border and glow effect
+- Displays health information as percentage
+- Overrides player name format to "Player: [Name]"
+- Color-codes health bar (orange <50%, red <20%)
 
-## Step 1: Install Tampermonkey
-Tampermonkey is a browser extension that allows you to manage userscripts. You need to install it before adding the JIRA autofill script.
-- **Download Tampermonkey**: Visit the [official Tampermonkey website](https://www.tampermonkey.net/) and install the extension for your browser (Chrome, Firefox, Edge, or Safari) .
+### 2. Custom GUI Menu
+**File:** `alyaparan-custom-gui-menu.js`  
+**Description:** Adds a customizable, draggable menu GUI activated by pressing the Insert key:
+- Main menu with submenus ("Physics", "Other")
+- Buttons to toggle various game functions
+- UI framework for potential feature implementation
+- Placeholder console logs simulating in-game events
 
-## Step 2: Install the JIRA Autofill Userscript
-Click the button below to install the userscript. Tampermonkey will automatically detect and prompt you to install it.
+### 3. Server Changer & Latency Optimizer
+**File:** `server-changer-and-latency-optimizer.js`  
+**Description:** Tool for manual server selection based on real-time ping:
+- Fetches latest server list from official Tanki Online API
+- Measures latency via WebSocket connections
+- Intercepts and reroutes game connections to preferred servers
+- Provides draggable UI with color-cycling menu
 
-[![Install Script](https://img.shields.io/badge/Install_Script-Tampermonkey-orange?style=for-the-badge)](https://gist.github.com/sergiikliepikov-sainsburys/087bc4794261d529046c4d93e825b4cc/raw/62ffb0c99ef519a42b1b4038b50e7e4d9d8b797c/jira-autofill.user.js)
+### 4. Tanki Online Mods and Hacks
+**File:** `tanki-online-mods-and-hacks.js`  
+**Description:** Comprehensive client-side modification suite:
+- Automation features (auto-fire, auto-respawn, auto-upgrade)
+- Specialized gameplay modes (drone repel for farming/defense)
+- UI controls (HUD element hiding, mouse freeze toggle)
+- Quality-of-life improvements (cooldown timer, new tab button)
+- Cosmetic changes (text alterations, tank renaming)
+- Visual overlay (mouse coordinates, status indicators)
+
+### 5. Player History Tracker (WIP)
+**File:** `trackit-player-history.js`  
+**Description:** Early development stage tool for player statistics:
+- Intended to fetch and display match history of other players
+- Currently non-functional with placeholder implementation
+
+## Installation
+
+### Automatic Installation (Recommended)
+1. Install [Tampermonkey](https://www.tampermonkey.net/) extension for your browser
+2. Click on any script link below to automatically install:
+   - [Player Health Highlighter](https://github.com/alyaparan/scripts/raw/refs/heads/main/player-health-highlighter.js)
+   - [Custom GUI Menu](https://github.com/alyaparan/scripts/raw/refs/heads/main/alyaparan-custom-gui-menu.js)
+   - [Server Changer & Latency Optimizer](https://github.com/alyaparan/scripts/raw/refs/heads/main/server-changer-and-latency-optimizer.js)
+   - [Tanki Online Mods and Hacks](https://github.com/alyaparan/scripts/raw/refs/heads/main/tanki-online-mods-and-hacks.js)
+   - [Player History Tracker](https://github.com/alyaparan/scripts/raw/refs/heads/main/trackit-player-history.js)
+3. Confirm installation when prompted by Tampermonkey
 
 ### Manual Installation
-If the button does not work, follow these steps:
-1. Open Tampermonkey's **Dashboard** from your browser's extension toolbar.
-2. Go to the **Utilities** tab.
-3. Under **Import from URL**, paste the following URL:
-   ```
-   https://gist.github.com/sergiikliepikov-sainsburys/087bc4794261d529046c4d93e825b4cc/raw/62ffb0c99ef519a42b1b4038b50e7e4d9d8b797c/jira-autofill.user.js
-   ```
-4. Click **Install** and confirm the installation .
+1. Install [Tampermonkey](https://www.tampermonkey.net/) extension
+2. Create a new script in Tampermonkey
+3. Copy the raw code from any script below and paste into the editor:
+   - [Player Health Highlighter Raw Code](https://github.com/alyaparan/scripts/raw/refs/heads/main/player-health-highlighter.js)
+   - [Custom GUI Menu Raw Code](https://github.com/alyaparan/scripts/raw/refs/heads/main/alyaparan-custom-gui-menu.js)
+   - [Server Changer Raw Code](https://github.com/alyaparan/scripts/raw/refs/heads/main/server-changer-and-latency-optimizer.js)
+   - [Mods and Hacks Raw Code](https://github.com/alyaparan/scripts/raw/refs/heads/main/tanki-online-mods-and-hacks.js)
+   - [Player History Raw Code](https://github.com/alyaparan/scripts/raw/refs/heads/main/trackit-player-history.js)
+4. Save the script (Ctrl+S)
+5. Refresh Tanki Online page
 
-## Step 3: Configure the Script
-After installation, ensure the script is enabled in Tampermonkey's **Installed Userscripts** tab. Refresh your JIRA page for the changes to take effect.
+## Configure the Script
 
-## Notes
-- This script is designed to automate field population in JIRA issues, such as assigning Sprints, Fix Versions, or Epic Links .
-- For troubleshooting, check Tampermonkey's documentation or contact the script's maintainer.
+Most scripts include configuration options:
+- **Custom GUI Menu**: Press Insert key to open/close menu
+- **Server Changer**: Menu appears automatically showing server ping times
+- **Mods and Hacks**: Extensive in-game UI with toggleable options
+- **Health Highlighter**: Works automatically with no user configuration needed
 
----
-
-### Key Features of This Markdown File:
-1. **Button Design**: Uses a shield.io badge-style button for visual appeal and clarity .
-2. **Direct Installation Link**: The button links directly to the raw userscript URL, which Tampermonkey can intercept and install .
-3. **Fallback Instructions**: Provides manual steps in case the button does not work .
-4. **Contextual Notes**: Explains the script's purpose and directs users to additional resources .
-
-This Markdown file can be rendered on GitHub or any platform supporting HTML-like buttons in Markdown. Users can click the button to initiate the installation process seamlessly.
-
-
+For advanced configuration, edit the script variables directly in Tampermonkey editor.
 
 ## Disclaimer
 
-Use this database responsibly and only for educational purposes. The creator disclaims any liability for actions and consequences resulting from the use of this data.
+These scripts are provided for educational and experimental purposes only. Use at your own risk. The developer is not responsible for any consequences resulting from the use of these scripts, including but not limited to account restrictions or bans. Always comply with Tanki Online's Terms of Service.
 
 ## Contribution
 
-If you have suggestions or improvements, feel free to contribute. Follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+We welcome contributions to improve these scripts! Please read our [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests or issues.
+
+### CONTRIBUTING.md
+```markdown
+# Contribution Guidelines
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Please ensure your code follows existing style conventions and includes appropriate comments.
+```
 
 ## License
 
-This project is licensed under the License 2.0 apache github - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+### LICENSE.md
+```markdown
+MIT License
+
+Copyright (c) 2023 Alik Paranyan
+
+Permission is hereby granted... [Standard MIT License text]
+```
 
 ## Contact
 
-For questions or concerns, you can contact the project creator at SocialNetworks: @alyaparan | PersonalWebsite: www.alikparanyan.com | WorkMail: mail@alikparanyan.com | PersonalMail: alikparanyan@gmail.com
+- **Social Networks**: [@alyaparan](https://github.com/alyaparan)
+- **Personal Website**: [www.alikparanyan.com](https://www.alikparanyan.com)
+- **Work Email**: [mail@alikparanyan.com](mailto:mail@alikparanyan.com)
+- **Personal Email**: [alikparanyan@gmail.com](mailto:alikparanyan@gmail.com)
+
+For script support or collaboration inquiries, please use the contact information above.
