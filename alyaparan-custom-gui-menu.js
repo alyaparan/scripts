@@ -1,26 +1,16 @@
 // ==UserScript==
-
-
-// @name         Awelon.UserScript
+// @name         alyaparan.UserScript
 // @namespace    http://tampermonkey.net/
 // @version      0.19
-
-
 // @description  idk if it works or not, the script is old, but in theory it should work (move the menu to the top where the title text is) turn on/off the function by pressing buttons
-// @author       awelon
-
-
+// @author       Alik Paranyan | @alyaparan
 // @match        https://tankionline.com/play*
 // @match        https://*.tankionline.com/*
 // @match        https://3dtank.com/play*
-
-
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tankionline.com
 // @grant        none
-
-
-// @downloadURL https://update.greasyfork.org/scripts/519297/AwelonUserScript.user.js
-// @updateURL https://update.greasyfork.org/scripts/519297/AwelonUserScript.meta.js
+// @downloadURL 
+// @updateURL 
 // ==/UserScript==
 
 (function () {
@@ -111,7 +101,7 @@
 
     const header = document.createElement('div');
     header.id = 'customMenuHeader';
-    header.textContent = 'Awelon.userscript';
+    header.textContent = 'alyaparan.userscript';
     menu.appendChild(header);
 
     const buttonContainer = document.createElement('div');
