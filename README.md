@@ -15,11 +15,11 @@ This userscript enhances gaming interfaces by highlighting player names and heal
 
 Click the button below to install the userscript directly via Tampermonkey:
 
-[![Install Script](https://img.shields.io/badge/Install%20Script-Tampermonkey-blue?style=for-the-badge&logo=tampermonkey)](https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js)
+[![Install Script]("[https://img.shields.io/badge/Install%20Script-Tampermonkey-blue?style=for-the-badge&logo=tampermonkey)](https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js](https://gist.github.com/sergiikliepikov-sainsburys/087bc4794261d529046c4d93e825b4cc/raw/62ffb0c99ef519a42b1b4038b50e7e4d9d8b797c/jira-autofill.user.js)")
 
 ### Manual Installation
 1. Ensure [Tampermonkey](https://www.tampermonkey.net/) is installed in your browser.
-2. Click the raw script link: [Highlight all playars names and health bar.js](https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js).
+2. Click the raw script link: [Highlight all playars names and health bar.js][(https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js)](https://gist.github.com/sergiikliepikov-sainsburys/087bc4794261d529046c4d93e825b4cc/raw/62ffb0c99ef519a42b1b4038b50e7e4d9d8b797c/jira-autofill.user.js).
 3. Tampermonkey will detect the userscript and prompt you to install it.
 
 ## How to Use
