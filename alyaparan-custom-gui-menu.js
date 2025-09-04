@@ -1,208 +1,321 @@
-# Tanki Online Mods & Cheats Collection
+// ==UserScript==
+// @name         alyaparan.UserScript
+// @namespace    http://tampermonkey.net/
+// @version      0.19
+// @description  idk if it works or not, the script is old, but in theory it should work (move the menu to the top where the title text is) turn on/off the function by pressing buttons
+// @author       Alik Paranyan | @alyaparan
+// @match        https://tankionline.com/play*
+// @match        https://*.tankionline.com/*
+// @match        https://3dtank.com/play*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=tankionline.com
+// @grant        none
+// @downloadURL 
+// @updateURL 
+// ==/UserScript==
 
-A collection of Tampermonkey scripts designed to enhance the Tanki Online gaming experience with various modifications, quality-of-life improvements, and gameplay enhancements.
+(function () {
+    'use strict';
 
-## 📋 Project Description
+    const style = document.createElement('style');
+    style.textContent = `
+        #customMenu {
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            width: 350px;
+            height: 350px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid white;
+            box-shadow: 0 0 10px white;
+            z-index: 9999;
+            display: none;
+            user-select: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
 
-This repository contains a series of userscripts developed for **Tanki Online** (https://tankionline.com/), a popular multiplayer tank battle game. These scripts are designed to be used with the Tampermonkey browser extension, which allows users to customize and enhance web page functionality . The scripts range from visual enhancements and quality-of-life improvements to advanced gameplay modifications.
+        #customMenuHeader {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: grab;
+        }
 
-## 🗂️ Scripts Overview
+        .menuButtons {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
 
-### 1. Player Health Highlighter
-**File:** `player-health-highlighter.js`  
-**Description:** Enhances player visibility and provides crucial combat information at a glance:
-- Identifies player elements in the DOM
-- Applies visual highlighting with bright red border and glow effect
-- Displays health information as percentage
-- Overrides player name format to "Player: [Name]"
-- Color-codes health bar (orange <50%, red <20%)
+        .menuButton {
+            width: 48%;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-### 2. Custom GUI Menu
-**File:** `alyaparan-custom-gui-menu.js`  
-**Description:** Adds a customizable, draggable menu GUI activated by pressing the Insert key:
-- Main menu with submenus ("Physics", "Other")
-- Buttons to toggle various game functions
-- UI framework for potential feature implementation
-- Placeholder console logs simulating in-game events
+        .menuButton:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
 
-### 3. Server Changer & Latency Optimizer
-**File:** `server-changer-and-latency-optimizer.js`  
-**Description:** Tool for manual server selection based on real-time ping:
-- Fetches latest server list from official Tanki Online API
-- Measures latency via WebSocket connections
-- Intercepts and reroutes game connections to preferred servers
-- Provides draggable UI with color-cycling menu
+        .subMenu {
+            margin-top: 10px;
+            display: none;
+        }
 
-### 4. Tanki Online Mods and Hacks
-**File:** `tanki-online-mods-and-hacks.js`  
-**Description:** Comprehensive client-side modification suite:
-- Automation features (auto-fire, auto-respawn, auto-upgrade)
-- Specialized gameplay modes (drone repel for farming/defense)
-- UI controls (HUD element hiding, mouse freeze toggle)
-- Quality-of-life improvements (cooldown timer, new tab button)
-- Cosmetic changes (text alterations, tank renaming)
-- Visual overlay (mouse coordinates, status indicators)
+        .subMenu .menuButton {
+            width: 90%;
+            margin: 5px auto;
+            padding: 6px;
+        }
 
-### 5. Player History Tracker (WIP)
-**File:** `trackit-player-history.js`  
-**Description:** Early development stage tool for player statistics:
-- Intended to fetch and display match history of other players
-- Currently non-functional with placeholder implementation
+        .notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            text-align: center;
+            z-index: 10000;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    `;
+    document.head.appendChild(style);
 
-## 📥 Installation
+    const menu = document.createElement('div');
+    menu.id = 'customMenu';
 
-### Prerequisites
-- Install [Tampermonkey](https://www.tampermonkey.net/) for your browser (Chrome, Firefox, Edge, Safari, or Opera) 
-- Ensure Tampermonkey has access to required permissions 
+    const header = document.createElement('div');
+    header.id = 'customMenuHeader';
+    header.textContent = 'alyaparan.userscript';
+    menu.appendChild(header);
 
-### Automatic Installation (Recommended)
-1. Click on any script link below to automatically install:
-   - [Player Health Highlighter](https://github.com/alyaparan/scripts/raw/refs/heads/main/player-health-highlighter.js)
-   - [Custom GUI Menu](https://github.com/alyaparan/scripts/raw/refs/heads/main/alyaparan-custom-gui-menu.js)
-   - [Server Changer & Latency Optimizer](https://github.com/alyaparan/scripts/raw/refs/heads/main/server-changer-and-latency-optimizer.js)
-   - [Tanki Online Mods and Hacks](https://github.com/alyaparan/scripts/raw/refs/heads/main/tanki-online-mods-and-hacks.js)
-   - [Player History Tracker](https://github.com/alyaparan/scripts/raw/refs/heads/main/trackit-player-history.js)
-2. Confirm installation when prompted by Tampermonkey 
-3. The script will now run automatically on Tanki Online pages
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'menuButtons';
 
-### Manual Installation
-1. Open Tampermonkey dashboard (click Tampermonkey icon → Dashboard) 
-2. Go to "Utilities" tab 
-3. Under "Import from URL", paste the raw script URL
-4. Click "Install" and confirm
-5. Alternatively, create a new script and paste the contents manually 
+    const physicsButton = document.createElement('div');
+    physicsButton.className = 'menuButton';
+    physicsButton.textContent = 'Physics';
 
-*Table: Browser Compatibility*
-| **Browser** | **Tampermonkey Support** | **Installation Guide** |
-|-------------|--------------------------|------------------------|
-| Chrome | ✅ Full support | [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Firefox | ✅ Full support | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)  |
-| Edge | ✅ Full support | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Safari | ✅ Full support | [Tampermonkey.net](https://www.tampermonkey.net/) |
-| Opera | ✅ Full support | [Opera Add-ons](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) |
+    const otherButton = document.createElement('div');
+    otherButton.className = 'menuButton';
+    otherButton.textContent = 'Other';
 
-## ⚙️ Configure the Script
+    buttonContainer.appendChild(physicsButton);
+    buttonContainer.appendChild(otherButton);
+    menu.appendChild(buttonContainer);
+    document.body.appendChild(menu);
 
-Most scripts include configuration options:
+    const physicsMenu = document.createElement('div');
+    physicsMenu.className = 'subMenu';
+    physicsMenu.innerHTML = `
+        <div class="menuButton" id="simpleTP">SimpleTP</div>
+    `;
+    menu.appendChild(physicsMenu);
 
-### Player Health Highlighter
-- Works automatically with no user configuration needed
-- Visual settings can be modified by editing the script variables
+    const otherMenu = document.createElement('div');
+    otherMenu.className = 'subMenu';
+    otherMenu.innerHTML = `
+        <div class="menuButton" id="jump">Jump (J)</div>
+    `;
+    menu.appendChild(otherMenu);
 
-### Custom GUI Menu
-- Press **Insert key** to open/close menu
-- Drag menu by clicking and holding the title bar
-- Buttons can be customized in the script code
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+        setTimeout(() => {
+            notification.style.opacity = 1;
+        }, 0);
+        setTimeout(() => {
+            notification.style.opacity = 0;
+            setTimeout(() => notification.remove(), 500);
+        }, 2000);
+    }
 
-### Server Changer & Latency Optimizer
-- Menu appears automatically showing server ping times
-- Click on preferred server to select
-- Reload game to apply changes
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Insert') {
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        }
+    });
 
-### Tanki Online Mods and Hacks
-- Extensive in-game UI with toggleable options
-- Press **X key** to toggle mouse freeze
-- Auto-features can be configured in script variables
+    physicsButton.addEventListener('click', () => {
+        const isVisible = physicsMenu.style.display === 'block';
+        physicsMenu.style.display = isVisible ? 'none' : 'block';
+        otherMenu.style.display = 'none';
+    });
 
-### Advanced Configuration
-For advanced users, edit script variables directly in Tampermonkey editor:
-1. Open Tampermonkey Dashboard
-2. Find the script and click on its name
-3. Modify variables in the editor window
-4. Save changes (Ctrl+S) 
+    otherButton.addEventListener('click', () => {
+        const isVisible = otherMenu.style.display === 'block';
+        otherMenu.style.display = isVisible ? 'none' : 'block';
+        physicsMenu.style.display = 'none';
+    });
 
-## ⚠️ Disclaimer
+    let isSimpleTPActive = false;
+    let isJumpActive = false;
 
-These scripts are provided for **educational and experimental purposes only**. Use at your own risk.
+    const simpleTPButton = document.getElementById('simpleTP');
+    simpleTPButton.addEventListener('click', () => {
+        isSimpleTPActive = !isSimpleTPActive;
+        showNotification(isSimpleTPActive ? 'Simple TP activated' : 'Simple TP disabled');
+    });
 
-### Important Considerations
-- 🚫 The developer is not responsible for any consequences resulting from the use of these scripts
-- 🎮 Always comply with Tanki Online's Terms of Service
-- ⚖️ Some scripts may violate game rules and could result in account restrictions
-- 🔒 Use responsibly and consider potential impacts on game balance and other players
-- 📛 Scripts are provided "as-is" without warranty of any kind
+    const jumpButton = document.getElementById('jump');
+    jumpButton.addEventListener('click', () => {
+        isJumpActive = !isJumpActive;
+        showNotification(isJumpActive ? 'Jump activated' : 'Jump disabled');
+    });
 
-### Recommended Usage
-- Test scripts in controlled environments first
-- Be aware of potential detection methods
-- Understand that online games frequently update and scripts may break
-- Regularly update scripts for compatibility
+    let isDragging = false;
+    let offsetX, offsetY;
 
-## 🤝 Contribution
+    header.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - menu.getBoundingClientRect().left;
+        offsetY = e.clientY - menu.getBoundingClientRect().top;
+        e.preventDefault();
+    });
 
-We welcome contributions to improve these scripts! Please follow these guidelines:
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            menu.style.left = `${e.clientX - offsetX}px`;
+            menu.style.top = `${e.clientY - offsetY}px`;
+        }
+    });
 
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
 
-### Contribution Guidelines
-- Ensure code follows existing style conventions
-- Include appropriate comments for complex logic
-- Test changes thoroughly before submitting
-- Update documentation if adding new features
-- Be responsive to feedback and review comments
+    function randomGameFunction() {
+        const functions = [
+            'gameObjects.localTank()',
+            'gameObjects.remoteTank()',
+            'gameObjects.enemyTank()',
+            'gameObjects.localPlayer()',
+            'gameObjects.remotePlayer()',
+            'gameObjects.spawnItem()',
+            'gameObjects.randomizePlayerPosition()',
+            'gameObjects.getObjectHealth()',
+            'gameObjects.randomizeTankSpeed()',
+            'gameObjects.createExplosion()',
+            'gameObjects.randomizeWeapon()',
+            'gameObjects.createObstacle()',
+            'gameObjects.triggerEvent()',
+            'gameObjects.toggleVisibility()',
+            'gameObjects.addItemToInventory()'
+        ];
+        const randomIndex = Math.floor(Math.random() * functions.length);
+        return functions[randomIndex];
+    }
 
-### Reporting Issues
-When reporting bugs, please include:
-- Browser and Tampermonkey version
-- Script version
-- Detailed description of the issue
-- Steps to reproduce the problem
-- Screenshots if applicable
+    console.log(randomGameFunction());
 
-## 📄 License
+    function addRandomLines() {
+        const numberOfEmptyLines = 350 - document.documentElement.outerHTML.split("\n").length;
+        for (let i = 0; i < numberOfEmptyLines; i++) {
+            console.log(""); 
+        }
+    }
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+    function gameScript1() {
+        console.log("Activating Tank AI...");
+        const tankAI = ['Patrolling', 'Attacking', 'Defending', 'Evading'];
+        const randomState = tankAI[Math.floor(Math.random() * tankAI.length)];
+        console.log(`Tank is now: ${randomState}`);
+    }
 
-### License Summary
-```
-MIT License
+    function gameScript2() {
+        console.log("Activating Player Stats...");
+        const playerStats = {
+            health: Math.floor(Math.random() * 100),
+            speed: Math.floor(Math.random() * 10) + 1,
+            power: Math.floor(Math.random() * 50) + 10
+        };
+        console.log(`Player Stats - Health: ${playerStats.health}, Speed: ${playerStats.speed}, Power: ${playerStats.power}`);
+    }
 
-Copyright (c) 2023 Alik Paranyan
+    function gameScript3() {
+        console.log("Spawning Enemy...");
+        const enemyTypes = ['Basic', 'Elite', 'Boss'];
+        const randomEnemy = enemyTypes[Math.floor(Math.random() * enemyTypes.length)];
+        console.log(`An enemy of type ${randomEnemy} has spawned!`);
+    }
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    function gameScript4() {
+        console.log("Random Event Triggered...");
+        const events = ['Meteor Shower', 'Power Surge', 'Weapon Malfunction', 'Laser Blast'];
+        const randomEvent = events[Math.floor(Math.random() * events.length)];
+        console.log(`Event: ${randomEvent}`);
+    }
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    function gameScript5() {
+        console.log("Creating Random Terrain...");
+        const terrainTypes = ['Mountains', 'Forest', 'Desert', 'Swamp'];
+        const randomTerrain = terrainTypes[Math.floor(Math.random() * terrainTypes.length)];
+        console.log(`Generated Terrain: ${randomTerrain}`);
+    }
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+    function gameScript6() {
+        console.log("Random Item Drop...");
+        const items = ['Health Potion', 'Shield', 'Rocket Launcher', 'Medkit'];
+        const randomItem = items[Math.floor(Math.random() * items.length)];
+        console.log(`Item Dropped: ${randomItem}`);
+    }
 
-## 📞 Contact
+    function gameScript7() {
+        console.log("Player Action Taken...");
+        const actions = ['Attack', 'Defend', 'Move Forward', 'Retreat'];
+        const randomAction = actions[Math.floor(Math.random() * actions.length)];
+        console.log(`Player Action: ${randomAction}`);
+    }
 
-For script support, collaboration inquiries, or questions:
+    function gameScript8() {
+        console.log("Random Objective...");
+        const objectives = ['Capture the Flag', 'Destroy the Base', 'Escort VIP', 'Defend Position'];
+        const randomObjective = objectives[Math.floor(Math.random() * objectives.length)];
+        console.log(`Objective: ${randomObjective}`);
+    }
 
-- **Social Networks**: [@alyaparan](https://github.com/alyaparan)
-- **Personal Website**: [www.alikparanyan.com](https://www.alikparanyan.com)
-- **Work Email**: [mail@alikparanyan.com](mailto:mail@alikparanyan.com)
-- **Personal Email**: [alikparanyan@gmail.com](mailto:alikparanyan@gmail.com)
+    function gameScript9() {
+        console.log("Creating Random Enemy AI...");
+        const aiStates = ['Aggressive', 'Defensive', 'Passive', 'Reactive'];
+        const randomAI = aiStates[Math.floor(Math.random() * aiStates.length)];
+        console.log(`Enemy AI State: ${randomAI}`);
+    }
 
-### Response Time
-- Typically respond within 24-48 hours
-- Priority given to bug reports and collaboration offers
-- Please be specific in your inquiries for faster resolution
+    function gameScript10() {
+        console.log("Random Weather Effect...");
+        const weatherEffects = ['Rain', 'Snow', 'Fog', 'Clear'];
+        const randomWeather = weatherEffects[Math.floor(Math.random() * weatherEffects.length)];
+        console.log(`Weather: ${randomWeather}`);
+    }
 
-### Follow for Updates
-- Star the repository on GitHub for updates
-- Check Tampermonkey script pages for version changes
-- Follow social channels for announcements
+    addRandomLines();
+    gameScript1();
+    gameScript2();
+    gameScript3();
+    gameScript4();
+    gameScript5();
+    gameScript6();
+    gameScript7();
+    gameScript8();
+    gameScript9();
+    gameScript10();
+})();
 
-### Updates and Tests
-*Last Updated: 2025-09-05*  
-*Tampermonkey Version Tested: 5.3.3*   
-*All scripts designed for Tanki Online version: Current as of 2025*
