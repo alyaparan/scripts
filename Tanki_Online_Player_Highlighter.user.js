@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @description  Highlight all players and show their name and health bar
-// @author       You
+// @author       Alik Paranyan | @alyaparan
 // @match        https://tankionline.com
 // @match        https://tankionline.com/play/
 // @grant        none
