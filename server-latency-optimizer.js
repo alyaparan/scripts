@@ -1,14 +1,13 @@
 // ==UserScript==
-// @name         server changer
-// @version      0.1
-// @description  gives you magical ping!
-// @author       wealthydev
+// @name         Server Changer & Latency Optimizer
+// @version      1.0
+// @description  This tool allows players to manually select which game server they connect to based on real-time ping, potentially reducing lag.
+// @author       Alik Paranyan | @alyaparan
 // @match        *://*.tankionline.com/*
 // @grant        none
 // @run-at       document-start
-// @namespace https://greasyfork.org/users/1347888
-// @downloadURL https://update.greasyfork.org/scripts/533211/server%20changer.user.js
-// @updateURL https://update.greasyfork.org/scripts/533211/server%20changer.meta.js
+// @downloadURL 
+// @updateURL 
 // ==/UserScript==
 
 (function() {
