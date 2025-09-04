@@ -7,8 +7,8 @@
 // @match        https://tankionline.com
 // @match        https://tankionline.com/play/
 // @grant        none
-// @downloadURL https://update.greasyfork.org/scripts/518838/Highlight%20Players%20with%20Name%20and%20Health%20Bar.user.js
-// @updateURL https://update.greasyfork.org/scripts/518838/Highlight%20Players%20with%20Name%20and%20Health%20Bar.meta.js
+// @downloadURL  
+// @updateURL 
 // ==/UserScript==
 
 (function() {
