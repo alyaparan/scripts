@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Tanki online mods and hacks
 // @namespace    http://tampermonkey.net/
-// @version      0.0.3
+// @version      1.0
 // @description  Tanki online auto respawn and more 
-// @author       8_no
+// @author       Alik Paranyan | @alyaparan
 // @match        https://tankionline.com/en/
 // @match        https://tankionline.com/
 // @match        https://tankionline.com/en/
@@ -11,8 +11,8 @@
 // @icon         https://www.google.com/imgres?imgurl=https%3A%2F%2Fkirka.io%2Fassets%2Fimg%2Flogo.0eeb25f3.svg&tbnid=YqfcSp1v__vdeM&vet=12ahUKEwil06Lpj_P-AhUYi4QIHZwqCREQMygCegQIARBe..i&imgrefurl=https%3A%2F%2Fkirka.io%2F&docid=31X_WyoF8Aj7AM&w=800&h=461&q=kirka%20icon&ved=2ahUKEwil06Lpj_P-AhUYi4QIHZwqCREQMygCegQIARBe
 // @grant        none
 // @license      MIT
-// @downloadURL https://update.greasyfork.org/scripts/466220/Tanki%20online%20mods%20and%20hacks.user.js
-// @updateURL https://update.greasyfork.org/scripts/466220/Tanki%20online%20mods%20and%20hacks.meta.js
+// @downloadURL 
+// @updateURL 
 // ==/UserScript==
 var mode = 'none';
 var active = true;
