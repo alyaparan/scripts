@@ -39,7 +39,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 ### Player Health Highlighter
 **Description:** Enhances player visibility with health bars and colored indicators. Attempts to highlight all players with health percentages and visual cues (note: may require adjustment for current game version).
 
-**Install Options:**
+
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/player-health-highlighter.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/player-health-highlighter.user.js)
 
@@ -48,7 +48,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 ### Custom GUI Menu
 **Description:** Adds a draggable in-game menu with toggleable functions and simulated game events. Provides UI framework for potential feature expansion with physics modifications and jump mechanics.
 
-**Install Options:**
+
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/alyaparan-custom-gui-menu.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/alyaparan-custom-gui-menu.user.js)
 
@@ -57,7 +57,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 ### Server Changer & Latency Optimizer
 **Description:** Optimizes connection by testing server latency and allowing manual server selection. Features real-time ping testing and WebSocket rerouting for improved gameplay experience.
 
-**Install Options:**
+
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/server-changer-and-latency-optimizer.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/server-changer-and-latency-optimizer.user.js)
 
@@ -66,7 +66,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 ### Tanki Online Mods & Hacks Suite
 **Description:** Comprehensive gameplay enhancement suite featuring auto-functions, UI controls, drone management, and cosmetic modifications. Includes auto-fire, respawn, upgrades, and specialized gameplay modes.
 
-**Install Options:**
+
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/tanki-online-mods-and-hacks.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/tanki-online-mods-and-hacks.user.js)
 
@@ -75,7 +75,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 ### Player History Tracker (TrackIt)
 **Description:** Early-stage development tool intended to track and display player statistics and match history. Currently non-functional but with potential for future development.
 
-**Install Options:**
+
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/trackit-player-history.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/trackit-player-history.user.js)
 
