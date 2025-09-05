@@ -25,6 +25,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 | **Server Changer** | `v4.2` | ✅ Stable | Performance | All Browsers |
 | **Mods & Hacks Suite** | `v5.8` | 🔧 Beta | Multi-Feature | Chrome/Firefox |
 | **Player History Tracker** | `v0.4` | 🚧 WIP | Analytics | Chrome |
+| **Tanki Online Advanced Control Mod** | `v0.4` | 🔧 Beta | Multi-Feature | Chrome |
 
 ---
 
@@ -81,6 +82,15 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
+### Tanki Online Advanced Control Mod
+**Description:** A sophisticated client-side control interface for testing Tanki Online's anti-cheat and defense systems. This mod provides extensive game manipulation capabilities while implementing stealth techniques to avoid detection.
+
+
+[![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/TankiOnline_Advanced_Control_Mod.user.js)
+[![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/TankiOnline_Advanced_Control_Mod.user.js)
+
+---
+
 ## 🌐 Browser Compatibility Matrix
 
 | Browser | Tampermonkey Support | Installation Guide |
@@ -104,6 +114,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 | **Server Changer** | Auto-Run | UI Interface | Medium |
 | **Mods & Hacks Suite** | `X` Key | Script Variables | Very High |
 | **Player History Tracker** | N/A | Code Editing | Low |
+| **Tanki Online Advanced Control Mod** | Auto-Run | Code Editing | Very High |
 
 ### Configuration Steps
 1. Open Tampermonkey Dashboard
@@ -158,6 +169,7 @@ E --> F[Review & Merge]
 | **Server Changer** | Active | 1 | 2025-08-28 |
 | **Mods & Hacks Suite** | Active | 5 | 2025-09-05 |
 | **Player History Tracker** | Paused | 7 | 2025-07-15 |
+| **Tanki Online Advanced Control Mod** | Active | 0 | 2025-09-5 |
 
 ---
 
