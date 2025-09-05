@@ -1,1 +1,0 @@
-[![Install Script](https://img.shields.io/badge/Install%20Script-Tampermonkey-blue?style=for-the-badge&logo=tampermonkey)](https://raw.githubusercontent.com/alyaparan/scripts/refs/heads/main/player-health-highlighter.user.js)
