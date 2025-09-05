@@ -16,7 +16,7 @@ Click the button below to install the userscript:
 
 ### Method 2: Manual Installation
 1. Ensure [Tampermonkey](https://www.tampermonkey.net/) is installed in your browser.
-2. Click the following link: [Highlight all players names and health bar.js](https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js)
+2. Click the following link: [Highlight all players names and health bar.js](https://github.com/alyaparan/scripts/blob/main/alyaparan-custom-gui-menu.js)
 3. Tampermonkey will open and prompt you to install the script.
 
 ## How to Use
