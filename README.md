@@ -177,3 +177,10 @@ of this software and associated documentation files (the "Software")...
 [![Follow](https://img.shields.io/badge/Follow-%40alyaparan-green?style=for-the-badge&logo=github)](https://github.com/alyaparan)
 
 </div>
+
+
+## Install Script
+
+Click the button below to install the userscript directly via Tampermonkey:
+
+[![Install Script](https://img.shields.io/badge/Install%20Script-Tampermonkey-blue?style=for-the-badge&logo=tampermonkey)](https://github.com/alyaparan/scripts/raw/main/Highlight%20all%20playars%20names%20and%20health%20bar.js)
