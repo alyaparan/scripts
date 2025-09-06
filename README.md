@@ -97,28 +97,6 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-## 🔧 Advanced Configuration
-
-### Script Control Matrix
-
-| Script | Activation Key | Configuration Method | Customization Level |
-| :--- | :---: | :---: | :---: |
-| **Player Health Highlighter** | Auto-Run | Script Variables | Medium |
-| **Custom GUI Menu** | `Insert` | UI Interface | High |
-| **Server Changer** | Auto-Run | UI Interface | Medium |
-| **Mods & Hacks Suite** | `X` Key | Script Variables | Very High |
-| **Player History Tracker** | N/A | Code Editing | Low |
-| **Tanki Online Advanced Control Mod** | Auto-Run | Code Editing | Very High |
-
-### Configuration Steps
-1. Open Tampermonkey Dashboard
-2. Select desired script
-3. Modify configuration variables
-4. Save changes (Ctrl+S)
-5. Reload game page
-
----
-
 ## ⚠️ Legal & Safety Notice
 
 <div align="center">
