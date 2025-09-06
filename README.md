@@ -16,20 +16,6 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-## ⚡ Instant Installation & 🌐 Browser Compatibility Matrix
-
-### Prerequisites
-- Install [Tampermonkey](https://www.tampermonkey.net/) for your browser
-- Ensure extension permissions are granted
-
-| Browser | Tampermonkey Support | Installation Guide |
-| :--- | :---: | :--- |
-| **Google Chrome** | ✅ Full Support | [Get Extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| **Mozilla Firefox** | ✅ Full Support | [Get Extension](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) |
-| **Microsoft Edge** | ✅ Full Support | [Get Extension](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| **Safari** | ✅ Full Support | [Get Extension](https://www.tampermonkey.net/) |
-| **Opera** | ✅ Full Support | [Get Extension](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) |
-
 ### Player Health Highlighter | Update `v1.0` `Stable` `06.09.2024` |
 **Description:** Enhances player visibility with health bars and colored indicators. Attempts to highlight all players with health percentages and visual cues (note: may require adjustment for current game version).
 
@@ -81,6 +67,22 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 [![Install](https://img.shields.io/badge/Auto_Install-Tampermonkey-orange?logo=tampermonkey&style=for-the-badge)](https://github.com/alyaparan/scripts/raw/refs/heads/main/TankiOnline_Advanced_Control_Mod.user.js)
 [![Download](https://img.shields.io/badge/Manual_Download-Script-blue?style=for-the-badge&logo=download)](https://github.com/alyaparan/scripts/blob/main/TankiOnline_Advanced_Control_Mod.user.js)
+
+---
+
+## ⚡ Instant Installation & 🌐 Browser Compatibility Matrix
+
+### Prerequisites
+- Install [Tampermonkey](https://www.tampermonkey.net/) for your browser
+- Ensure extension permissions are granted
+
+| Browser | Tampermonkey Support | Installation Guide |
+| :--- | :---: | :--- |
+| **Google Chrome** | ✅ Full Support | [Get Extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
+| **Mozilla Firefox** | ✅ Full Support | [Get Extension](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) |
+| **Microsoft Edge** | ✅ Full Support | [Get Extension](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
+| **Safari** | ✅ Full Support | [Get Extension](https://www.tampermonkey.net/) |
+| **Opera** | ✅ Full Support | [Get Extension](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) |
 
 ---
 
