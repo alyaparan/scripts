@@ -29,7 +29,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-## 🌐 Browser Compatibility Matrix & ⚡ Instant Installation
+## ⚡ Instant Installation & 🌐 Browser Compatibility Matrix
 
 ### Prerequisites
 - Install [Tampermonkey](https://www.tampermonkey.net/) for your browser
