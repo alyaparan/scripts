@@ -96,18 +96,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 </div>
 
 ### Usage Guidelines
-- 🔒 These scripts are provided for **educational purposes only**
-- ⚖️ Use in accordance with Tanki Online's Terms of Service
-- 🚫 Developer not responsible for account restrictions
-- 🎯 Use responsibly and respect game balance
-
-### Risk Assessment
-| Risk Level | Probability | Impact | Mitigation |
-| :---: | :---: | :---: | :--- |
-| **Low** | Unlikely | Minor | Test in controlled environment |
-| **Medium** | Possible | Moderate | Regular script updates |
-| **High** | Likely | Severe | Use at your own risk |
-
+- ⚖️ These scripts are provided for **educational purposes only**, Use in accordance with Tanki Online's Terms of Service, Developer not responsible for account restrictions, Use responsibly and respect game balance.
 ---
 
 ## 🛠 Development & Contribution
