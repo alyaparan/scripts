@@ -52,7 +52,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Custom GUI Menu | Issue `1` | Update `v1.0-06.09.2025` |
+### Custom GUI Menu | ` Update v1.0` | `Date 06.09.2025` | `Issue 1` |
 **Description:** Adds a draggable in-game menu with toggleable functions and simulated game events. Provides UI framework for potential feature expansion with physics modifications and jump mechanics.
 
 
