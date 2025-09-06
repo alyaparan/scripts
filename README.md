@@ -43,7 +43,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 | **Safari** | ✅ Full Support | [Get Extension](https://www.tampermonkey.net/) |
 | **Opera** | ✅ Full Support | [Get Extension](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) |
 
-### Player Health Highlighter
+### Player Health Highlighter | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** Enhances player visibility with health bars and colored indicators. Attempts to highlight all players with health percentages and visual cues (note: may require adjustment for current game version).
 
 
@@ -52,7 +52,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Custom GUI Menu
+### Custom GUI Menu | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** Adds a draggable in-game menu with toggleable functions and simulated game events. Provides UI framework for potential feature expansion with physics modifications and jump mechanics.
 
 
@@ -61,7 +61,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Server Changer & Latency Optimizer
+### Server Changer & Latency Optimizer | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** Optimizes connection by testing server latency and allowing manual server selection. Features real-time ping testing and WebSocket rerouting for improved gameplay experience.
 
 
@@ -70,7 +70,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Tanki Online Mods & Hacks Suite
+### Tanki Online Mods & Hacks Suite | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** Comprehensive gameplay enhancement suite featuring auto-functions, UI controls, drone management, and cosmetic modifications. Includes auto-fire, respawn, upgrades, and specialized gameplay modes.
 
 
@@ -79,7 +79,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Player History Tracker (TrackIt)
+### Player History Tracker (TrackIt) | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** Early-stage development tool intended to track and display player statistics and match history. Currently non-functional but with potential for future development.
 
 
@@ -88,7 +88,7 @@ This repository hosts a revolutionary suite of userscripts for **Tanki Online** 
 
 ---
 
-### Tanki Online Advanced Control Mod
+### Tanki Online Advanced Control Mod | Issue `1` | Update `v1.0-06.09.2025` |
 **Description:** A sophisticated client-side control interface for testing Tanki Online's anti-cheat and defense systems. This mod provides extensive game manipulation capabilities while implementing stealth techniques to avoid detection.
 
 
@@ -132,16 +132,6 @@ C --> D[Push to Branch]
 D --> E[Open Pull Request]
 E --> F[Review & Merge]
 ```
-
-### Development Status
-| Script | Maintenance | Issues | Last Update |
-| :--- | :---: | :---: | :---: |
-| **Player Health Highlighter** | Active | 0 | 2025-09-01 |
-| **Custom GUI Menu** | Active | 2 | 2025-09-03 |
-| **Server Changer** | Active | 1 | 2025-08-28 |
-| **Mods & Hacks Suite** | Active | 5 | 2025-09-05 |
-| **Player History Tracker** | Paused | 7 | 2025-07-15 |
-| **Tanki Online Advanced Control Mod** | Active | 0 | 2025-09-5 |
 
 ---
 
